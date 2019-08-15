@@ -1,0 +1,213 @@
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.App {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 20px 0;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.App_button_primary {
+    all: unset;
+    color: #666;
+    background-color: cornflowerblue;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.App_button_danger {
+    all: unset;
+    background-color: indianred;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.App_button_danger:first-of-type {
+    margin-right: 10px;
+}
+
+.App_button_danger:hover {
+    background-color: #a3a2a2;
+    color: #545454;
+}
+
+.App_list {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.App_list_item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.App_list_item_icons {
+    width: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+
+}
+
+.App_list_item_icons i {
+    line-height: 26px;
+    cursor: pointer;
+    color: gray;
+}
+
+.App_form {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.App_input {
+    border: none;
+    width: 300px;
+    border: 1px solid #f2f2f2;
+    border-radius: 2px;
+}
+
+.App_form_inline {
+    display: flex;
+    width: 900px;
+    justify-content: space-between;
+    display: flex;
+    margin: 20px 0;
+}
+
+.App_form_group {
+    width: 30%;
+}
+
+.App_input {
+    border: none;
+    width: 100%;
+    border: 1px solid #f2f2f2;
+    border-radius: 2px;
+    line-height: 30px;
+    margin-right: 10px;
+}
+
+.App_form_button {
+    all: unset;
+    background-color: cornflowerblue;
+    color: #fff;
+    padding: 0px 10px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.App_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid indianred;
+    border-radius: 3px;
+    background-color: lightgreen;
+    margin: 6px 0;
+}
+
+.App_card_main {
+    padding: 20px 30px;
+    box-sizing: border-box;
+    background-color: lightgreen;
+    width: 49%;
+}
+
+.App_card_heading {
+    padding-bottom: 20px;
+    text-transform: capitalize;
+}
+
+.App_card_subheading {
+    display: block;
+    font-size: 55%;
+    color: #666;
+}
+
+.App_card_copy {
+    font-weight: 300;
+}
+
+.App_card_extra {
+    padding: 7px 30px;
+    box-sizing: border-box;
+    background-color: #f4f3f2;
+}
+
+.App_table {
+    width: 100%;
+}
+
+.App_table_head {
+    color: #545454;
+    background-color: #d6d5d4;
+}
+
+.App_table_body {
+}
+
+.App_success, .App_error {
+    width: 100%;
+    text-align: center;
+    color: white;
+    padding: 5px;
+    margin: 5px 0 15px 0;
+}
+
+.App_success {
+    background-color: green;
+}
+
+.App_error {
+    background-color: red;
+}
+
+.App_modal{
+    display: none;
+
+    .App_modal_bg {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(0,0,0,0.3);
+
+        .App_modal_main {
+            display: flex;
+            flex-direction: column;
+            width: 50vw;
+            height: 50vh;
+            background-color: rgba(255, 255, 255,0.8);
+            border-radius: 5px;
+            box-sizing: border-box;
+            padding: 20px;
+
+            .fa-times {
+                align-self: flex-end;
+                cursor: pointer;
+                padding: 10px;
+                margin: -20px;
+            }
+        }
+    }
+}
